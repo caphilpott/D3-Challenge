@@ -22,19 +22,19 @@ let svg = d3
   .attr("height", svgHeight);
 
 // Append an SVG group
-var chartGroup = svg.append("g")
+let chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Initial Params
-var chosenXAxis = "poverty";
-var chosenYAxis = "healthcare";
+let chosenXAxis = "poverty";
+let chosenYAxis = "healthcare";
 
 
-// function used for updating x-scale var upon click on axis label 
+// function used for updating x-scale let upon click on axis label 
 
 function xScale(healthData, chosenXAxis) {
   // create scales
-  var xLinearScale = d3.scaleLinear()
+  let xLinearScale = d3.scaleLinear()
     .domain([d3.min(healthData, d => d[chosenXAxis])*.90,
       d3.max(healthData, d => d[chosenXAxis])*1.05
 
