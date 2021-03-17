@@ -1,21 +1,21 @@
 // @TODO: YOUR CODE HERE!
 // Set chart measurements and margins
-var svgWidth = 960;
-var svgHeight = 500;
+let svgWidth = 960;
+let svgHeight = 500;
 
-var margin = {
+let margin = {
   top: 20,
   right: 40,
   bottom: 80,
   left: 100
 };
 
-var width = svgWidth - margin.left - margin.right;
-var height = svgHeight - margin.top - margin.bottom;
+let width = svgWidth - margin.left - margin.right;
+let height = svgHeight - margin.top - margin.bottom;
 
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
-var svg = d3
+let svg = d3
   .select("#scatter")
   .append("svg")
   .attr("width", svgWidth)
@@ -30,7 +30,7 @@ var chosenXAxis = "poverty";
 var chosenYAxis = "healthcare";
 
 
-// function used for updating x-scale var upon click on axis label
+// function used for updating x-scale var upon click on axis label 
 
 function xScale(healthData, chosenXAxis) {
   // create scales
