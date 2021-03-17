@@ -70,7 +70,7 @@ function renderAxesX(newXScale, xAxis) {
 
 // function used for updating render yAxis upon click on axis label 
 function renderAxesY(newYScale, yAxis) {
-  var leftAxis = d3.axisLeft(newYScale);
+  let leftAxis = d3.axisLeft(newYScale);
 
   yAxis.transition()
     .duration(1000)
@@ -80,7 +80,7 @@ function renderAxesY(newYScale, yAxis) {
 }
 
 // function used for updating circles group with a transition to
-// new circles X
+// new circles X 
 function renderCirclesX(circlesGroup, newXScale, chosenXAxis) {
 
   circlesGroup.transition()
