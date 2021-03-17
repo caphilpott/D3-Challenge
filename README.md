@@ -29,4 +29,4 @@ All changes are run through and x an y axis eventlistener function. This is ever
 
 It was reward to see everything work in the end. It was tedious undertaking to get there. 
 
-Strong social message regarding the data prsented around healthcare and conditions along with economic status and location. 
+Strong social message regarding the data prsented around healthcare and conditions along with economic status, age, and location. 
