@@ -30,7 +30,7 @@ let chosenXAxis = "poverty";
 let chosenYAxis = "healthcare";
 
 
-// function used for updating x-scale let upon click on axis label 
+// function used for updating x-scale upon click on axis label 
 
 function xScale(healthData, chosenXAxis) {
   // create scales
@@ -44,10 +44,10 @@ function xScale(healthData, chosenXAxis) {
   return xLinearScale;
 }
 
-  // function used for updating y-scale var upon click on axis label
+  // function used for updating y-scale upon click on axis label
 function yScale(healthData, chosenYAxis) {
   // create scales
-  var yLinearScale = d3.scaleLinear()
+  let yLinearScale = d3.scaleLinear()
     .domain([d3.max(healthData, d => d[chosenYAxis])*1.05,
       d3.min(healthData, d => d[chosenYAxis])*.90
 
