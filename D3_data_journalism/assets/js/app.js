@@ -436,7 +436,7 @@ let obesityLabel = labelsGroupY.append("text")
     });
 })
 
-// .catch(function(error) {
-//   console.log(error);
-// });
+.catch(function(error) {
+  console.log(error);
+});
 
