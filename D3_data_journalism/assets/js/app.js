@@ -68,7 +68,7 @@ function renderAxesX(newXScale, xAxis) {
   return xAxis;
 }
 
-// function used for updating render yAxis upon click on axis label
+// function used for updating render yAxis upon click on axis label 
 function renderAxesY(newYScale, yAxis) {
   var leftAxis = d3.axisLeft(newYScale);
 
