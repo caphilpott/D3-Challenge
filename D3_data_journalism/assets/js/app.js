@@ -102,7 +102,7 @@ function renderCircleX(circleLabels, newXScale, chosenXAxis) {
 }
 
 // function used for updating circles group with a transition to
-// new circles Y
+// new circles Y 
 function renderCirclesY(circlesGroup, newYScale, chosenYAxis) {
 
   circlesGroup.transition()
