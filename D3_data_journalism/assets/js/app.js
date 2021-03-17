@@ -243,14 +243,14 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
     .classed("active", true)
     .text("In Poverty (%)");
 
-  var ageLabel = labelsGroupX.append("text")
+  let ageLabel = labelsGroupX.append("text")
     .attr("x", 0)
     .attr("y", 40)
     .attr("value", "age") // value to grab for event listener
     .classed("inactive", true)
     .text("Age Median");
 
-  var incomeLabel = labelsGroupX.append("text")
+  let incomeLabel = labelsGroupX.append("text")
     .attr("x", 0)
     .attr("y", 60)
     .attr("value", "income") // value to grab for event listener
@@ -258,9 +258,9 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
     .text("Household Income (Median)");
 
 // Create group for three y-axis labels
-var labelsGroupY = chartGroup.append("g")
+let labelsGroupY = chartGroup.append("g")
 
-var healthcareLabel = labelsGroupY.append("text")
+let healthcareLabel = labelsGroupY.append("text")
   .attr("transform", "rotate(-90)")
   .attr("y", 40 - margin.left)
   .attr("x", 0 - (height / 2))
@@ -269,7 +269,7 @@ var healthcareLabel = labelsGroupY.append("text")
   .classed("active", true)
   .text("Lacks Healthcare (%)");
 
-var smokesLabel = labelsGroupY.append("text")
+let smokesLabel = labelsGroupY.append("text")
   .attr("transform", "rotate(-90)")
   .attr("y", 20 - margin.left)
   .attr("x", 0 - (height / 2))
@@ -278,7 +278,7 @@ var smokesLabel = labelsGroupY.append("text")
   .classed("inactive", true)
   .text("Smokes (%)");
 
-var obesityLabel = labelsGroupY.append("text")
+let obesityLabel = labelsGroupY.append("text")
   .attr("transform", "rotate(-90)")
   .attr("y", 0 - margin.left)
   .attr("x", 0 - (height / 2))
@@ -288,7 +288,7 @@ var obesityLabel = labelsGroupY.append("text")
   .text("Obese (%)");
 
   // updateToolTip function above csv import
-  var circlesGroup = updateToolTip(chosenXAxis, chosenYAxis,circlesGroup);
+  let circlesGroup = updateToolTip(chosenXAxis, chosenYAxis,circlesGroup);
 
   // x axis labels event listener
   labelsGroupX.selectAll("text")
