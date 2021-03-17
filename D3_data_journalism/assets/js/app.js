@@ -189,23 +189,23 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
   });
 
   // xLinearScale function above csv import
-  var xLinearScale = xScale(healthData, chosenXAxis);
+  let xLinearScale = xScale(healthData, chosenXAxis);
 
   // yLinearScale function above csv import
-  var yLinearScale = yScale(healthData, chosenYAxis);
+  let yLinearScale = yScale(healthData, chosenYAxis);
 
   // Create initial axis functions
-  var bottomAxis = d3.axisBottom(xLinearScale);
-  var leftAxis = d3.axisLeft(yLinearScale);
+  let bottomAxis = d3.axisBottom(xLinearScale);
+  let leftAxis = d3.axisLeft(yLinearScale);
 
   // append x axis
-  var xAxis = chartGroup.append("g")
+  let xAxis = chartGroup.append("g")
     .classed("x-axis", true)
     .attr("transform", `translate(0, ${height})`)
     .call(bottomAxis);
 
   // append y axis
-  var yAxis = chartGroup.append("g")
+  let yAxis = chartGroup.append("g")
     .classed("y-axis", true)
     .call(leftAxis);
 
