@@ -112,8 +112,8 @@ function renderCirclesY(circlesGroup, newYScale, chosenYAxis) {
   return circlesGroup;
 }
 
-// function used for updating circles group with a transition to
-// new circles X
+// function used for updating circles label with a transition to
+// new circles y
 function renderCircleY(circleLabels, newYScale, chosenYAxis) {
 
   circleLabels.transition()
@@ -126,7 +126,7 @@ function renderCircleY(circleLabels, newYScale, chosenYAxis) {
 
 // function used for updating circles group with new tooltip
 function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
-  var labelX, labelY;
+  let labelX, labelY;
 
   if (chosenXAxis === "poverty") {
       labelX = "Poverty";
