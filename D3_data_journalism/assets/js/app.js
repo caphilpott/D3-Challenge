@@ -91,7 +91,7 @@ function renderCirclesX(circlesGroup, newXScale, chosenXAxis) {
 }
 
 // function used for updating circle labels group with a transition to
-// new circle labels X
+// new circle labels X 
 function renderCircleX(circleLabels, newXScale, chosenXAxis) {
 
   circleLabels.transition()
