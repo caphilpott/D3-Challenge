@@ -294,7 +294,7 @@ let obesityLabel = labelsGroupY.append("text")
   labelsGroupX.selectAll("text")
     .on("click", function() {
       // get value of selection
-      var value = d3.select(this).attr("value");
+      let value = d3.select(this).attr("value");
       if (value !== chosenXAxis) {
 
         // replaces chosenXAxis with value
