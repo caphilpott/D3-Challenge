@@ -210,7 +210,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
     .call(leftAxis);
 
   // append initial circles
-  var circlesGroup = chartGroup.selectAll("circle")
+  let circlesGroup = chartGroup.selectAll("circle")
     .data(healthData)
     .enter()
     .append("circle")
@@ -221,7 +221,7 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
     .attr("opacity", ".5")
   
   // define circle labels to all state text to be place in each circle
-  var circleLabels = chartGroup.selectAll(null).data(healthData).enter().append("text");
+  let circleLabels = chartGroup.selectAll(null).data(healthData).enter().append("text");
 
     circleLabels
     .attr("x", d => xLinearScale(d[chosenXAxis]))
@@ -233,10 +233,10 @@ d3.csv("assets/data/data.csv").then(function(healthData, err) {
     .attr("fill", "white");
 
   // Create group for three x-axis labels
-  var labelsGroupX = chartGroup.append("g")
+  let labelsGroupX = chartGroup.append("g")
     .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
-  var povertyLabel = labelsGroupX.append("text")
+  let povertyLabel = labelsGroupX.append("text")
     .attr("x", 0)
     .attr("y", 20)
     .attr("value", "poverty") // value to grab for event listener
