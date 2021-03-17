@@ -57,9 +57,9 @@ function yScale(healthData, chosenYAxis) {
   return yLinearScale;
 }
 
-// function used for updating xAxis var upon click on axis label
+// function used for updating render xAxis upon click on axis label
 function renderAxesX(newXScale, xAxis) {
-  var bottomAxis = d3.axisBottom(newXScale);
+  let bottomAxis = d3.axisBottom(newXScale);
 
   xAxis.transition()
     .duration(1000)
@@ -68,7 +68,7 @@ function renderAxesX(newXScale, xAxis) {
   return xAxis;
 }
 
-// function used for updating yAxis var upon click on axis label
+// function used for updating render yAxis upon click on axis label
 function renderAxesY(newYScale, yAxis) {
   var leftAxis = d3.axisLeft(newYScale);
 
