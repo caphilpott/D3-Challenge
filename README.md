@@ -25,7 +25,7 @@ The bottom and the side labels had to be spaced out through changing their x and
 
 Active/inactive switches are invoked through a series of if then else statements to highlight the selected x or y axis lable selected.
 
-All changes are run through and x an y axis eventlistener function. This is everything had to be in place and in sync with the other sections of java script. 
+All changes are run through and x an y axis eventlistener function. This is where everything had to be in place and in sync with the other sections of java script. 
 
 It was reward to see everything work in the end. It was tedious undertaking to get there. 
 
