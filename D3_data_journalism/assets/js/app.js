@@ -167,6 +167,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
   })
     // onmouseout event
     .on("mouseout", function(data, index) {
+    // .on("mouseout", function(data) {
       toolTip.hide(data);
     });
 
@@ -288,7 +289,8 @@ let obesityLabel = labelsGroupY.append("text")
   .text("Obese (%)");
 
   // updateToolTip function above csv import
-  let circlesGroup = updateToolTip(chosenXAxis, chosenYAxis,circlesGroup);
+  // let circlesGroup = updateToolTip(chosenXAxis, chosenYAxis,circlesGroup);
+  circlesGroup = updateToolTip(chosenXAxis, chosenYAxis,circlesGroup);
 
   // x axis labels event listener
   labelsGroupX.selectAll("text")
